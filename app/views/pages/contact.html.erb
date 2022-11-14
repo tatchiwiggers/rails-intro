@@ -1,0 +1,11 @@
+<h1>Conheça nossa turma de doidos</h1>
+
+
+
+<ul>
+    <% @members.each do |member| %>
+        <li><%= member.capitalize %></li>
+    <% end %>
+</ul>
+
+<%= link_to 'back to main', root_path %>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsIntro</title>
+    <title>banana</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,16 @@
   </head>
 
   <body>
+  <div style="background-color: lightblue; padding: 24px">
+    <form action="/contact" method="get">
+      <input type="text"
+              name="teacher"
+              value="<%= params[:teacher] %>"
+              placeholder="Who are you looking for?"
+            >
+      <input type="submit">
+    </form>
+  </div>
     <%= yield %>
   </body>
 </html>
